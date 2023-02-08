@@ -64,3 +64,4 @@ if __name__ == "__main__":
         [[3, 0, 7, 0, 0, 0, 7, 0, 0]],
     )
     print(data[0])
+    print(data[0]["ids"].size())

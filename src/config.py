@@ -10,7 +10,8 @@ TRAINING_FILE = DATA_PATH / "train.txt"
 
 MAX_LEN = 128
 TRAIN_BATCH_SIZE = 32
-VALID_BATCH_SIZE = 8
+VAL_BATCH_SIZE = 8
+LR = 0.001
 EPOCHS = 10
 DEVICE = torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
 TOKENIZER = transformers.BertTokenizer.from_pretrained("bert-base-uncased")
